@@ -34,7 +34,7 @@ class CheckpointLoaderSimpleWithNoiseSelect:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
+                "ckpt_name": ("STRING"),
                 "beta_schedule": (BetaSchedules.ALIAS_LIST, {"default": BetaSchedules.USE_EXISTING}, )
             },
             "optional": {
